@@ -1,0 +1,115 @@
+@import url(./fonts.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --ExtraBold: "Poppins-ExtraBold";
+    --Bold: "Poppins-Bold";
+    --Medium: "Poppins-Medium";
+    --Regular: "Poppins-Regular";
+    --Light: "Poppins-Light";
+}
+
+body{
+    background: radial-gradient(52.52% 39.17% at 50% 66.95%, #F3F3F3 0%, #FFF 100%);
+}
+/* HEADER START */
+
+.page-header {
+    height: 500px;
+    background-color: #926FF6;
+}
+
+.container {
+    max-width: 965px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    color: var(--Pure-White, #FFF);
+    font-family: var(--ExtraBold);
+    font-size: 18.045px;
+    line-height: 71.5%;
+    margin-top: 48px;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.header-nav_link {
+    color: var(--Pure-White, #FFF);
+    text-align: center;
+    font-family: var(--Regular);
+    font-size: 11.691px;
+    line-height: 78%;
+    letter-spacing: 0.234px;
+    padding: 50px 16px;
+    transition: .3s;
+}
+
+.header-nav_link:hover {
+    background-color: #FFFFFF;
+    color: #926FF6;
+    border-radius: 30%;
+}
+
+
+
+/* HEADER END */
+
+/*  BANNER START */
+
+.info {
+    padding-block: 135px;
+    text-align: center;
+}
+
+.info-desc {
+    color: #FFE074;
+    font-family: Poppins-ExtraBold;
+    font-size: 12.271px;
+    font-weight: 800;
+    line-height: 71.5%;
+}
+
+.info-title {
+    color: var(--Pure-White, #FFF);
+    font-family: Poppins-ExtraBold;
+    font-size: 62.797px;
+    font-weight: 800;
+    line-height: 71.5%;
+    padding-block: 30px;
+}
+
+.info-desc_sec {
+    color: var(--Pure-White, #FFF);
+    font-family: Poppins-Medium;
+    font-size: 16.602px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 79.5%;
+    letter-spacing: 0.332px;
+}
+
+.info-btn {
+    width: 38px;
+    height: 38px;
+    margin-top: 30px;
+}
+
+/*  BANNER END */
