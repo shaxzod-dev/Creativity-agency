@@ -1,115 +1,181 @@
 @import url(./fonts.css);
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 :root {
-    --ExtraBold: "Poppins-ExtraBold";
-    --Bold: "Poppins-Bold";
-    --Medium: "Poppins-Medium";
-    --Regular: "Poppins-Regular";
-    --Light: "Poppins-Light";
+  --ExtraBold: "Poppins-ExtraBold";
+  --Bold: "Poppins-Bold";
+  --Medium: "Poppins-Medium";
+  --Regular: "Poppins-Regular";
+  --Light: "Poppins-Light";
 }
 
-body{
-    background: radial-gradient(52.52% 39.17% at 50% 66.95%, #F3F3F3 0%, #FFF 100%);
+body {
+  background: radial-gradient(
+    52.52% 39.17% at 50% 66.95%,
+    #f3f3f3 0%,
+    #fff 100%
+  );
 }
+
+.title {
+  color: #ffae00;
+  font-family: var(--Bold);
+  font-size: 12.271px;
+  line-height: 71.5%;
+  letter-spacing: 0.368px;
+}
+
+.sub {
+  color: var(--Gray-2, #4f4f4f);
+  font-family: var(--Regular);
+  font-size: 24px;
+  line-height: 128.5%;
+  letter-spacing: 0.72px;
+}
+
 /* HEADER START */
 
 .page-header {
-    height: 500px;
-    background-color: #926FF6;
+  height: 500px;
+  background-color: #926ff6;
 }
 
 .container {
-    max-width: 965px;
-    width: 100%;
-    padding: 0 20px;
-    margin: 0 auto;
+  max-width: 965px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-logo {
-    color: var(--Pure-White, #FFF);
-    font-family: var(--ExtraBold);
-    font-size: 18.045px;
-    line-height: 71.5%;
-    margin-top: 48px;
+  color: var(--Pure-White, #fff);
+  font-family: var(--ExtraBold);
+  font-size: 18.045px;
+  line-height: 71.5%;
+  margin-top: 48px;
 }
 
 .header-nav {
-    display: flex;
+  display: flex;
 }
 
 .header-nav_link {
-    color: var(--Pure-White, #FFF);
-    text-align: center;
-    font-family: var(--Regular);
-    font-size: 11.691px;
-    line-height: 78%;
-    letter-spacing: 0.234px;
-    padding: 50px 16px;
-    transition: .3s;
+  color: var(--Pure-White, #fff);
+  text-align: center;
+  font-family: var(--Regular);
+  font-size: 11.691px;
+  line-height: 78%;
+  letter-spacing: 0.234px;
+  padding: 50px 16px;
+  transition: 0.3s;
 }
 
 .header-nav_link:hover {
-    background-color: #FFFFFF;
-    color: #926FF6;
-    border-radius: 30%;
+  background-color: #ffffff;
+  color: #926ff6;
+  border-radius: 30%;
 }
 
+.info {
+  padding-block: 135px;
+  text-align: center;
+}
 
+.info-title {
+  color: var(--Pure-White, #fff);
+  font-family: Poppins-ExtraBold;
+  font-size: 62.797px;
+  font-weight: 800;
+  line-height: 71.5%;
+  padding-block: 30px;
+}
+
+.info-desc_sec {
+  color: var(--Pure-White, #fff);
+  font-family: Poppins-Medium;
+  font-size: 16.602px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 79.5%;
+  letter-spacing: 0.332px;
+}
+
+.info-btn {
+  width: 38px;
+  height: 38px;
+  margin-top: 30px;
+}
 
 /* HEADER END */
 
 /*  BANNER START */
 
-.info {
-    padding-block: 135px;
-    text-align: center;
+.banner {
+  padding-block: 64px 106px;
 }
 
-.info-desc {
-    color: #FFE074;
-    font-family: Poppins-ExtraBold;
-    font-size: 12.271px;
-    font-weight: 800;
-    line-height: 71.5%;
+.banner-info {
+  max-width: 431px;
+  width: 100%;
+  height: 301px;
 }
 
-.info-title {
-    color: var(--Pure-White, #FFF);
-    font-family: Poppins-ExtraBold;
-    font-size: 62.797px;
-    font-weight: 800;
-    line-height: 71.5%;
-    padding-block: 30px;
+.banner-desc {
+  margin-block: 15px 31px;
 }
 
-.info-desc_sec {
-    color: var(--Pure-White, #FFF);
-    font-family: Poppins-Medium;
-    font-size: 16.602px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 79.5%;
-    letter-spacing: 0.332px;
+.banner-info_text {
+  width: 419px;
+  color: var(--Gray-2, #4f4f4f);
+  font-family: var(--Medium);
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.48px;
 }
 
-.info-btn {
-    width: 38px;
-    height: 38px;
-    margin-top: 30px;
+.play-sub {
+  color: var(--Accent-Pink, #f3849f);
+  font-family: var(--Bold);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 71.5%;
+  letter-spacing: 0.48px;
+}
+
+.play-btn {
+  width: 46px;
+  height: 46px;
+}
+
+.play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 14px;
+  width: 163px;
+  margin-top: 35px;
+}
+
+.img {
+  max-width: 394px;
+  height: 301px;
+}
+
+.banner-img{
+    width: 100%;
 }
 
 /*  BANNER END */
